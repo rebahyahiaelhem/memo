@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border:0px  white;
+}
+</style>
+
+
+<script>
+    function reverse() {
+        let src="";
+        switch (event.target.id) {
+        case "1":
+            src = "A.jpg";
+            break;
+        case "2":
+            src = "B.jpg";
+            break;
+        case "3":
+            src = "C.jpg";
+            break;
+        case "4":
+            src = "A.jpg";
+            break;
+        case "5":
+            src = "B.jpg";
+            break;
+        default:
+            src = "C.jpg";
+        }
+
+
+      document.getElementById(event.target.id).src = src;
+    }
+    </script>
+    
+
+</head>
+<body>
+
+<h2>Jeux de mémoire</h2>
+
+
+<p id="demo"></p>
+
+<table style="width:100%">
+
+  <tr>
+    <td><img src="Back.jpg" id="1" onclick="reverse()"></td>
+    <td><img src="Back.jpg" id="2" onclick="reverse()"></td>
+    <td><img src="Back.jpg" id="3" onclick="reverse()"></td>
+  </tr>
+  <tr>
+    <td><img src="Back.jpg" id="4" onclick="reverse()"></td>
+    <td><img src="Back.jpg" id="5" onclick="reverse()"></td>
+    <td><img src="Back.jpg" id="6" onclick="reverse()"></td>
+  </tr>
+</table>
+
+
+
+</body>
+</html>
